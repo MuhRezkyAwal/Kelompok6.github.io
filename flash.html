@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flash Sale</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+  <div class="px-3">
+    <!-- navbar -->
+    <nav class="navbar navbar-dark navbar-expand-lg bg-secondary rounded">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Handphone Cell</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Beranda</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="produk.html" id="navbarDropdown" role="button"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Produk</a>
+              <div class="dropdown-menu bg-secondary" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item text-light" href="produk.html">All</a>
+                <a class="dropdown-item text-light" href="xiaomi.html">Xiaomi</a>
+                <a class="dropdown-item text-light" href="oppo.html">Oppo</a>
+                <a class="dropdown-item text-light" href="vivo.html">Vivo</a>
+                <a class="dropdown-item text-light" href="samsung.html">Samsung</a>
+                <a class="dropdown-item text-light" href="infinix.html">Infinix</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="flash.html">Flash Sale</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a href="gallery.html" class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Gallery</a>
+              <div class="dropdown-menu bg-secondary" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item text-light" href="gallery.html">All</a>
+                <a class="dropdown-item text-light" href="gallery_xiaomi.html">Xiaomi</a>
+                <a class="dropdown-item text-light" href="gallery_oppo.html">Oppo</a>
+                <a class="dropdown-item text-light" href="gallery_vivo.html">Vivo</a>
+                <a class="dropdown-item text-light" href="gallery_samsung.html">Samsung</a>
+                <a class="dropdown-item text-light" href="gallery_infinix.html">Infinix</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">Tentang Kami</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- countdown -->
+    <div class="content px-3">
+      <div class="row mt-5">
+        <h4 class="text-center mb-4">Flash Sale</h4>
+        <div class="d-flex  justify-content-center align-items-center">
+          <div class="col-md-2 bg-secondary text-light text-center rounded">
+            <h5 id="demo" class="mt-2"></h5>
+          </div>
+        </div>
+        <script>
+          var countDownDate = new Date("Oct 30, 2023 00:00:00").getTime();
+
+          var x = setInterval(function () {
+
+            var now = new Date().getTime();
+
+            var distance = countDownDate - now;
+
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+              + minutes + "m " + seconds + "s ";
+
+            if (distance < 0) {
+              clearInterval(x);
+              document.getElementById("demo").innerHTML = "EXPIRED";
+            }
+          }, 1000);
+        </script>
+      </div>
+    </div>
+
+    <!-- content -->
+    <div class="content">
+      <div class="row mt-4">
+        <div class="col-md-3">
+          <div class="card" style="width: 18rem;">
+            <img src="img/1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Redmi Note 11</h5>
+              <p class="card-text">5000 mAh | Layar Besar 6.71</p>
+              <p>Rp 999.999</p>
+              <small><del>
+                  <p>Mulai dari Rp 2.399.000</p>
+                </del></small>
+              <a href="#" class="btn btn-primary">Beli Sekarang</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card" style="width: 18rem;">
+            <img src="img/2.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Redmi 12C</h5>
+              <p class="card-text">5000 mAh | Layar Besar 6.71</p>
+              <p>Rp 799.999</p>
+              <small><del>
+                  <p>Mulai dari Rp 1.199.000</p>
+                </del></small>
+              <a href="#" class="btn btn-primary">Beli Sekarang</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card" style="width: 18rem;">
+            <img src="img/3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Redmi A2</h5>
+              <p class="card-text">5000 mAh | Layar Besar 6.52</p>
+              <p>Rp 499.999</p>
+              <small><del>
+                  <p>Mulai dari Rp 949.000</p>
+                </del></small>
+              <a href="#" class="btn btn-primary">Beli Sekarang</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card" style="width: 18rem;">
+            <img src="img/4.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Poco C40</h5>
+              <p class="card-text">6000 mAh | Layar Besar 6.71</p>
+              <p>Rp 699.999</p>
+              <small><del>
+                  <p>Mulai dari Rp 1.099.000</p>
+                </del></small>
+              <a href="#" class="btn btn-primary">Beli Sekarang</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"> </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"> </script>
+
+</body>
+
+</html>
